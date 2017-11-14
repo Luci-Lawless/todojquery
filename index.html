@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>TodoList</title>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -32,16 +34,5 @@
     </div>
   </div>
 
-  <script>
-    function toggleDone() {
-      var checkbox = this;
-
-      $(checkbox).parent().toggleClass("completed");
-    }
-    $(document).ready(function() {
-      $("input[type=checkbox]").bind('change', toggleDone);
-    });
-      updateCounters();
-  </script>
 </body>
 </html>
